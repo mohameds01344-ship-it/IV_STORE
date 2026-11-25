@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090909"><meta name="description" content="IV_STORE — Wear the Difference. Premium streetwear essentials.">
+  <title>IV_STORE — Wear the Difference</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement"><span data-i18n="announcement">شحن لكل محافظات مصر · اطلب دلوقتي عبر واتساب</span></div>
+  <header class="header">
+    <button class="icon-btn menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+    <a class="brand" href="#home" aria-label="IV STORE"><img src="assets/logo.webp" alt="IV logo"><span>IV_STORE</span></a>
+    <nav class="nav" id="nav"><a href="#home" data-i18n="home">الرئيسية</a><a href="#shop" data-i18n="shop">المتجر</a><a href="#about" data-i18n="about">عن البراند</a><a href="#contact" data-i18n="contact">تواصل معنا</a></nav>
+    <div class="header-actions"><button class="lang-btn" id="langBtn">EN</button><button class="cart-trigger" id="cartOpen"><span data-i18n="bag">الحقيبة</span><span class="cart-count" id="cartCount">0</span></button></div>
+  </header>
+  <main>
+    <section class="product-page" id="productPage" hidden aria-live="polite"></section>
+    <section class="hero" id="home">
+      <div class="hero-copy"><p class="eyebrow" data-i18n="heroEyebrow">NEW SEASON · 2026</p><h1><span>WEAR</span><br>THE <em>DIFFERENCE.</em></h1><p class="hero-sub" data-i18n="heroSub">قطع أساسية بروح مختلفة. ستايلك يبدأ من هنا.</p><a class="primary-btn" href="#shop"><span data-i18n="explore">اكتشف المجموعة</span><b>↙</b></a><div class="hero-note"><span class="line"></span><span data-i18n="heroNote">DESIGNED TO STAND OUT</span></div></div>
+      <div class="hero-visual"><div class="hero-frame"><img src="assets/polo-cream-teddy.webp" alt="IV_STORE latest collection"></div><div class="hero-stamp">IV<br><small>STORE</small></div><div class="vertical-text">IV_STORE / EST. 2026</div></div>
+      <div class="hero-bottom"><span>01 / 03</span><span data-i18n="scroll">SCROLL TO EXPLORE ↓</span></div>
+    </section>
+    <section class="ticker" aria-label="Brand message"><div>IV_STORE <i>✳</i> WEAR THE DIFFERENCE <i>✳</i> IV_STORE <i>✳</i> WEAR THE DIFFERENCE <i>✳</i></div></section>
+    <section class="shop-section" id="shop"><div class="section-head"><div><p class="eyebrow" data-i18n="collectionLabel">THE COLLECTION</p><h2 data-i18n="collectionTitle">اختار ستايلك<span>.</span></h2></div><p class="section-desc" data-i18n="collectionDesc">اكتشف قطعنا الجديدة — تفاصيل بسيطة، حضور مختلف.</p></div>
+      <div class="shop-tools"><div class="filters" id="filters"><button class="filter active" data-filter="all" data-i18n="all">الكل</button><button class="filter" data-filter="hoodie" data-i18n="hoodies">هوديز</button><button class="filter" data-filter="sweatshirt" data-i18n="sweatshirts">سويت شيرت</button><button class="filter" data-filter="polo" data-i18n="polos">بولو</button></div><div class="result-count" id="resultCount">09 PRODUCTS</div></div>
+      <div class="products-grid" id="productsGrid"></div>
+    </section>
+    <section class="manifesto" id="about"><div class="manifesto-mark">IV</div><div class="manifesto-copy"><p class="eyebrow" data-i18n="aboutLabel">MORE THAN A FIT</p><h2 data-i18n="aboutTitle">مش مجرد لبس.<br><em>دي طريقتك.</em></h2><p data-i18n="aboutText">في IV_STORE بنؤمن إن الاختلاف في التفاصيل. اختيارات يومية بتصميم عصري، وراحة تكمّل ستايلك في كل وقت.</p><a href="#shop" class="text-link"><span data-i18n="shopNow">تسوّق المجموعة</span> ↙</a></div></section>
+    <section class="contact-strip" id="contact"><div><p class="eyebrow" data-i18n="contactLabel">LET'S CONNECT</p><h2 data-i18n="contactTitle">جاهز تكمّل اللوك؟</h2></div><div class="contact-links" id="socialLinks"><a data-social="instagram" target="_blank" rel="noopener">INSTAGRAM ↗</a><a data-social="facebook" target="_blank" rel="noopener">FACEBOOK ↗</a><a data-social="tiktok" target="_blank" rel="noopener">TIKTOK ↗</a></div></section>
+  </main>
+  <footer><a class="footer-brand" href="#home">IV_STORE<span>®</span></a><p data-i18n="footer">Wear the Difference. © 2026 IV_STORE</p><a href="#home" class="back-top">↑</a></footer>
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart"><div class="drawer-head"><div><p class="eyebrow" data-i18n="yourBag">YOUR BAG</p><h2 data-i18n="cartTitle">حقيبتك</h2></div><button class="close-btn" id="cartClose">×</button></div><div class="cart-items" id="cartItems"></div><div class="cart-empty" id="cartEmpty"><span>IV</span><p data-i18n="emptyCart">لسه مفيش منتجات في حقيبتك.</p><button class="text-link" id="continueShopping" data-i18n="continue">كمّل تسوقك ↙</button></div>
+    <form id="checkoutForm" class="checkout-form" hidden><h3 data-i18n="details">بيانات التوصيل</h3><label><span data-i18n="fullName">الاسم بالكامل</span><input name="name" required autocomplete="name"></label><label><span data-i18n="phone">رقم الموبايل</span><input name="phone" required type="tel" autocomplete="tel" placeholder="01xxxxxxxxx"></label><label><span data-i18n="governorate">المحافظة</span><select name="governorate" id="governorate" required><option value="" data-i18n="chooseGov">اختار المحافظة</option></select></label><label><span data-i18n="address">العنوان بالتفصيل</span><textarea name="address" required rows="2"></textarea></label><label><span data-i18n="notes">ملاحظات (اختياري)</span><input name="notes"></label></form>
+    <div class="drawer-bottom" id="drawerBottom"><div class="shipping-line"><span data-i18n="shipping">الشحن</span><b id="shippingValue">—</b></div><div class="total-line"><span data-i18n="total">الإجمالي</span><strong id="totalValue">0 EGP</strong></div><button class="checkout-btn" id="checkoutBtn" data-i18n="checkout">إتمام الطلب عبر واتساب <span>↗</span></button><p class="secure-note" data-i18n="whatsappNote">سيتم إرسال تفاصيل طلبك إلى واتساب لتأكيد الأوردر.</p></div>
+  </aside>
+  <div class="toast" id="toast"></div>
+  <script src="config.js"></script>
+  <script src="products.js"></script>
+  <script src="app.js"></script>
+</body></html>
